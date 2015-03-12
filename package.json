@@ -1,0 +1,17 @@
+{
+  "name": "reactjs-helloworld",
+  "version": "1.0.0",
+  "description": "A simple reactjs example",
+  "main": "index.js",
+  "scripts": {
+    "start": "wzrd app.js -- -t reactify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.0",
+    "reactify": "^1.1.0"
+  }
+}
