@@ -13,5 +13,8 @@
   "dependencies": {
     "react": "^0.13.0",
     "reactify": "^1.1.0"
+  },
+  "devDependencies": {
+    "wzrd": "^1.2.1"
   }
 }
