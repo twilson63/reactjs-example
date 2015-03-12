@@ -31,5 +31,20 @@ npm start
 
 Open to http://localhost:9966
 
+## Setup
 
+So this project is using `browserify`, `wzrd`, and `reactify` to make it
+very simple to get up and running.  To setup this project from scratch
+you can do the following:
+
+``` sh
+npm i json -g
+mkdir <project>
+cd <project>
+npm init
+npm i react --save
+npm i reactify wzrd --save
+json -I -f package.json \
+-e 'this.scripts.start="wzrd app.js -- -t reactify"'
+```
 
