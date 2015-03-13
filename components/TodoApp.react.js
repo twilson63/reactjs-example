@@ -2,17 +2,12 @@ var Footer = require('./Footer.react');
 var Header = require('./Header.react');
 var MainSection = require('./MainSection.react');
 var React = require('react');
+var TodoStore = require('../stores/TodoStore');
 
 function getTodoState() {
   return {
-    allTodos: { 
-      "1": {
-        id: "1",
-        complete: false,
-        text: "FooBar"
-      }
-    },
-    areAllComplete: false
+    allTodos: TodoStore.getAll(),
+    areAllComplete: TodoStore.areAllComplete()
   };
 }
 
@@ -23,8 +18,10 @@ var TodoApp = React.createClass({
     return getTodoState();
   },
   componentDidMount: function() {
+    TodoStore.addChangeListener(this._onChange);
   },
   componentWillUnmount: function() {
+    TodoStore.removeChangeListener(this._onChange);
   },
   render: function() {
     return (
@@ -39,6 +36,7 @@ var TodoApp = React.createClass({
     );
   },
   _onChange: function() {
+    this.setState(getTodoState());
   }
 });
 
