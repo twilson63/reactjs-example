@@ -17,7 +17,7 @@ var Header = React.createClass({
   },
 
   _onSave: function(text) {
-
+    if (text && text.length > 0) console.log(text);
   }
 
 });
