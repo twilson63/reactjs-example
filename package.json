@@ -4,7 +4,7 @@
   "description": "A simple reactjs example",
   "main": "index.js",
   "scripts": {
-    "start": "wzrd app.js -- -t reactify",
+    "start": "wzrd app.js:bundle.js -- -t reactify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
