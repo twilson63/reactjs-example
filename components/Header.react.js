@@ -1,5 +1,6 @@
 var React = require('react');
 var TodoTextInput = require('./TodoTextInput.react');
+var TodoActions = require('../actions/TodoActions');
 
 var Header = React.createClass({
 
@@ -17,7 +18,8 @@ var Header = React.createClass({
   },
 
   _onSave: function(text) {
-    
+    if (text.trim())
+      TodoActions.create(text);
   }
 
 });

@@ -1,5 +1,5 @@
 var React = require('react');
-
+var TodoActions = require('../actions/TodoActions');
 var Footer = React.createClass({
   
   render: function() {
@@ -46,7 +46,7 @@ var Footer = React.createClass({
   },
 
   _onClearCompletedClick: function() {
-
+    TodoActions.destroyCompleted();
   }
 
 });
