@@ -1,11 +1,6 @@
 var React = require('react');
-
-//var TodoTextInput = require('./components/TodoTextInput.react');
-
+var TodoApp = require('./components/TodoApp.react');
 React.render(
-  <div>
-    <h1>TodoList</h1>
-    {/* <TodoTextInput id="new-todo" placeholder="What needs to be done?" /> */}
-  </div>,
+  <TodoApp />,
   document.getElementById('todoapp')
 );
