@@ -15,6 +15,7 @@
     "reactify": "^1.1.0"
   },
   "devDependencies": {
+    "browserify": "^9.0.3",
     "wzrd": "^1.2.1"
   }
 }
