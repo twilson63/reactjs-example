@@ -7,6 +7,11 @@ var Header = React.createClass({
     return (
       <header id="header">
         <h1>todos</h1>
+        <TodoTextInput
+          id="new-todo"
+          placeholder="What needs to be done?"
+          onSave={this._onSave}
+        />
       </header>
     );
   },
